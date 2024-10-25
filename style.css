@@ -1,0 +1,147 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+	display:flex;
+    background:linear-gradient(45deg,#4E65FF,#92EFFD);
+}
+.content{
+	position:relative;
+	display:flex;
+	width:100%;
+}
+.content .dropDownMenuDiv{
+	position:absolute;
+	width:70px;
+	height:70px;
+	background:white;
+	top:10%;
+	right:0;
+	margin-right:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	box-shadow:0px 10px 55px #4E65FF;
+	transition:0.5s;
+}
+.content .dropDownMenuDiv .profilePhoto{
+	position:absolute;
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	left:0;
+	margin-left:20px;
+	z-index:-1;
+	transition:0.5s;
+	}
+.content .dropDownMenuDiv .myName{
+	position:absolute;
+	font-family:sans-serif;
+	color:#555;
+	left:22%;
+	z-index:-1;
+	transition:0.5s;
+}	
+.content .dropDownMenuDiv .menuButtonContent{
+	position:absolute;
+	width:70;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	right:0;
+	cursor:pointer;
+	z-index:2;
+	background:white;
+}
+.content .dropDownMenuDiv .menuButtonContent .menuButton{
+	position:absolute;
+	width:35;
+	height:1;
+	background:black;
+	transition:0.5s;
+}
+.content .dropDownMenuDiv .menuButtonContent .menuButton:nth-child(2){
+	top:34%;
+}
+.content .dropDownMenuDiv .menuButtonContent .menuButton:nth-child(1){
+	box-shadow: 0px 10px 0px black;
+}
+hr{
+    position :absolute;
+    width:95%;
+	z-index:4;
+	top:100%;
+}
+.content .optionsDiv{
+	position:absolute;
+	width:30px;
+	height:25px;
+	background:white;
+	top:10%;
+	right:0;
+	margin-right:50px;
+	z-index:-1;
+	padding-top:30;
+	overflow:hidden;
+}
+.optionsDiv ul{    /* the ul  */
+	list-style-type:none;
+}
+.optionsDiv ul li img:nth-child(1){
+	position:absolute; 
+	width:25;
+	height:25;
+	margin-left:28px;
+}
+.optionsDiv img:nth-child(2){
+	position:absolute; 
+	width:25;
+	height:25;
+	margin-top:50px;
+	margin-left:28px;
+}
+.optionsDiv img:nth-child(3){
+	position:absolute; 
+	width:25;
+	height:25;
+	margin-top:100px;
+	margin-left:28px;
+}
+.optionsDiv img:nth-child(4){
+	position:absolute; 
+	width:25;
+	height:25;
+	margin-top:150px;
+	margin-left:28px;
+}
+.optionsDiv img:nth-child(5){
+	position:absolute; 
+	width:20;
+	height:25;
+	margin-top:200px;
+	margin-left:28px;
+}
+.optionsDiv img:nth-child(6){
+	position:absolute; 
+	width:25;
+	height:25;
+	margin-top:250px;
+	margin-left:5;
+	margin-left:31px;
+}
+.optionsDiv ul li a{
+	color:#555;
+	text-decoration:none;
+	margin-left:20%;
+	font-family:sans-serif;
+	font-size:15;
+	transition:0.2s;
+}
+.optionsDiv ul li a:hover{  
+    font-size:17;
+	transition:0.2s;
+	color:#4E65FF;
+}
